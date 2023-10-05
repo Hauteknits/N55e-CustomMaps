@@ -15,3 +15,5 @@ Flame2 - Same as above but runs a bit richer at high RPM and low load
 ---
 Use at your own risk! Flame tunes can really fuck ur shit up. I have had metal shavings come out my exhaust in a video I took so take that into consideration. Don't be upset if you blow ur turbo or melt ur cats
 Do not, ever, run these tunes without catless DPs or DP cutouts, you will melt your cats
+
+***USE ALL OF THESE AT YOUR OWN RISK!! THESE FILES COME WITH ABSOLUTELY NO WARRENTY, TO THE EXTENT PROVIDED BY APPLICABLE LAW***

@@ -1,5 +1,5 @@
 # N55e-CustomMaps
-Some custom maps I have mades
+Some custom maps I have made
 
 Flames were followed from this guide: https://www.e90post.com/forums/showthread.php?t=1358084
 Semi-frequent updates posted there as well
@@ -11,3 +11,5 @@ General Notes:
 * MINIMUM catless downpipes required, good idea to have a catback as well.
 * Use all of these at your own risk, what works for me may not work for your
 * You can use these maps with MHD burble, just don't set the max RPM higher than ~4500rpm
+
+***USE ALL OF THESE AT YOUR OWN RISK!! THESE FILES COME WITH ABSOLUTELY NO WARRENTY, TO THE EXTENT PROVIDED BY APPLICABLE LAW***

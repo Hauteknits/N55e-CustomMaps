@@ -12,6 +12,7 @@ Flame2 - Same as above but runs a bit richer at high RPM and low load
 4. 9E60B_PUMP2 - Flame2 > Same as above but with a -0.589 change in the fuel tables from 20-30 load and 5k-7k RPM.
 5. 9E60B_E85 - Flame2 > BMS E85 BEF map with Flame2 changes made. Recommended for mixtures of E50 and up
 6. 9E60B_E85_PI - Flame2(Untested) > BMS E85_PI map with Flame2 changes. Recommended for PI of E50 and up, don't have PI yet so cant test yet.
+7. 9E60B_PUMP2 - Flame2 - 2StpTuner(Untested) > Personal Map. Same as Flame2, but with 2F44, 2F8B, 325A, and 2C56 disabled. Used mainly for WOTBox and troubleshooting a JB4 overboost issue
 ---
 Use at your own risk! Flame tunes can really fuck ur shit up. I have had metal shavings come out my exhaust in a video I took so take that into consideration. Don't be upset if you blow ur turbo or melt ur cats
 Do not, ever, run these tunes without catless DPs or DP cutouts, you will melt your cats

@@ -1,4 +1,4 @@
-<!-- Written 03/20/2024 13:07:13 -->
+<!-- Written 04/25/2024 20:39:53 -->
 <XDFFORMAT version="1.70">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -19600,7 +19600,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x6A69" flags="0x0">
     <title>Frequency of interruptions to achieve hiding of further functions</title>
-    <description>Max value 65535</description>
+    <description>WOTBox =  65535, Stock = 12500</description>
     <CATEGORYMEM index="0" category="25" />
     <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19640,7 +19640,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x5D80" flags="0x0">
     <title>Misfire Frequency to achieve a fuel cutoff</title>
-    <description>Max value 65535</description>
+    <description>WOTBox = 65535, 2500 = Stock</description>
     <CATEGORYMEM index="0" category="25" />
     <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19680,6 +19680,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x5994" flags="0x0">
     <title>Ignition Diagnosis: Increment Error counter ignition circut error, Bank by Bank</title>
+    <description>0 = WOTBox, 4 = Stock</description>
     <CATEGORYMEM index="0" category="25" />
     <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19759,6 +19760,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x2F57" flags="0x0">
     <title>Voltage threshold low for detection of cable drop Inj/IGN relay</title>
+    <description>0 = WOTBox, 5 = Stock</description>
     <CATEGORYMEM index="0" category="25" />
     <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x" uniqueid="0x0">

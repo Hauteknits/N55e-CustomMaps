@@ -14,8 +14,19 @@ Here is a simple flow:
 3. Search for matching bytes in the 9E60B bin in HxD
 4. Add respective table to 9E60B xdf
 
-There are a ton of tables in WinOLS, most of the work was just sifting through most of them and seeing if I could find something of use. As a proof of concept, I found the table "Pre-control correction bank 2/1 in the function monitoring" by just sifting through the Hex data, there was a single 1:1 match between the 2 files. So I figured it had to be the matching table. I then found 2 tables in the field "DMDMIL: "1.119.0 Diagnosis misfire detection - statistics, error handling and MIL control", which sounded like exactly the category I was looking for. The tables were "Misfire frequency per bank to achieve a fuel cutoff" and "Frequency of interruptions to achieve the hiding of further functions", which sounded like *exactly* what was happening with the DME handling the WOTBox. In the X5 A2L, the values were 2500 and 65535 respectivly. I followed the above steps until I found a 1:1 string of bytes matching, and then looked for 0x09C4, which was exactly the value I was looking for. Based on locality, and the equivalence of values between the 2 files, I believe all the tables I added are accurate. Testing is needed to confirm, and is why I must say..
+There are a ton of tables in WinOLS, most of the work was just sifting through most of them and seeing if I could find something of use. As a proof of concept, I found the table "Pre-control correction bank 2/1 in the function monitoring" by just sifting through the Hex data, there was a single 1:1 match between the 2 files. So I figured it had to be the matching table. I then found 2 tables in the field "DMDMIL: "1.119.0 Diagnosis misfire detection - statistics, error handling and MIL control", which sounded like exactly the category I was looking for. The tables were "Misfire frequency per bank to achieve a fuel cutoff" and "Frequency of interruptions to achieve the hiding of further functions", which sounded like *exactly* what was happening with the DME handling the WOTBox. In the X5 A2L, the values were 2500 and 65535 respectively and same for the following tables. I followed the above steps until I found a 1:1 string of bytes matching, and then looked for 0x09C4, which was exactly the value I was looking for. Based on locality, and the equivalence of values between the 2 files, I believe all the tables I added are accurate. Testing is needed to confirm, and is why I must say..
 
 ***USE ALL OF THESE AT YOUR OWN RISK!! THESE FILES COME WITH ABSOLUTELY NO WARRENTY, TO THE EXTENT PROVIDED BY APPLICABLE LAW***
+
+### The Actual Values:
+Ok guy, cool, but how do I do it?\
+I'm not 100% sure exactly what switches the detection off, but all found tables are under Toggles>Misfire Detection - WIP. Here are the settings that worked for me
+* Frequency of interruptions to achieve hiding of futher functions: 65535
+* Misfire Frequency to achieve a fuel cutoff: 65535
+* Ignition Diagnosis: Increment error counter ignition circut error, Bank by Bank: 0
+* Ignition Diagnosis: switches the correlation of the ignition diagnosis with the misfire detection: 0
+* Voltage threshold low for detection of cable drop Inj/IGN relay: 0
+
+If I had to guess its the voltage threshold one, but I'm not 100% currently, wanted to roll this out ASAP.
 
 Feel free to submit any issues, or contact me on e90post with any questions
